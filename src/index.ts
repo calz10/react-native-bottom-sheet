@@ -10,7 +10,7 @@ export { useBottomSheet } from './hooks/useBottomSheet';
 export { useBottomSheetModal } from './hooks/useBottomSheetModal';
 export { useBottomSheetSpringConfigs } from './hooks/useBottomSheetSpringConfigs';
 export { useBottomSheetTimingConfigs } from './hooks/useBottomSheetTimingConfigs';
-export { useScrollEventsHandlersDefault } from './hooks/useCustomScrollEventsHandlersDefault';
+export { useCustomScrollEventsHandlersDefault } from './hooks/useCustomScrollEventsHandlersDefault';
 export { useBottomSheetInternal } from './hooks/useBottomSheetInternal';
 export { useBottomSheetDynamicSnapPoints } from './hooks/useBottomSheetDynamicSnapPoints';
 //#endregion
