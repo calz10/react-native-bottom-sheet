@@ -12,7 +12,7 @@ export type ScrollEventContextType = {
   scrollY?: number
 };
 
-export const useScrollEventsHandlersDefault: ScrollEventsHandlersHookType = (
+export const useCustomScrollEventsHandlersDefault: ScrollEventsHandlersHookType = (
   scrollableRef,
   scrollableContentOffsetY,
   scrollY,
@@ -28,7 +28,7 @@ export const useScrollEventsHandlersDefault: ScrollEventsHandlersHookType = (
   //#region callbacks
   const handleOnScroll: ScrollEventHandlerCallbackType<ScrollEventContextType> =
     useWorkletCallback(
-      (e, context) => {
+      (e: any, context: any) => {
 
         if (animatedScrollableState.value !== SCROLLABLE_STATE.LOCKED) {
             scrollY.value = e.contentOffset.y
